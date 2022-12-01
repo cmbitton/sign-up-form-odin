@@ -6,11 +6,22 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #111;
 }
-
+h2{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.info-paragraph{
+    margin-left: 50px;
+    font-size: 1.5rem;
+    width: 70%;
+}
 .form-container{
     display: flex;
-    width: 100vw;
+    font-family: 'Questrial', sans-serif;
+    width: 100%;
+    max-width: 1600px;
     height: 100vh;
 }
 
@@ -18,25 +29,44 @@ body{
     background-image: url(./leonardo-zorzi-vVtkT4ny8hM-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    width: 60vw;
+    width: 50vw;
+    max-width: 720px;
 }
 .form-content{
-    color: white;
+    color: #DDD;
     width: 70%;
     background-color: #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 form{
     background-color: #333;
+    padding: 50px;
+    padding-top: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-container, .user-password-container, .name-container{
     display: flex;
+    margin-bottom: 15px;
 }
 .contact-container > div, .user-password-container > div, .name-container > div{
-    width: 200px;
+    width: 275px;
     display: flex;
     flex-direction: column;
 }
+label{
+    margin-bottom: 3px;
+    font-size: 1.2rem;
+}
 input{
-    width: 125px;
+    width: 200px;
+    height: 25px;
+    background-color: #DDD;
+    border: none;
+    border-radius: 3px;
+}
+.submit-button-container{
+    margin-left: 50px;
 }
