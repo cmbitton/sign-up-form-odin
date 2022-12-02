@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    letter-spacing: 1px;
 }
 body{
     height: 100vh;
@@ -72,6 +73,9 @@ input{
     border: none;
     border-radius: 3px;
 }
+input:valid:focus{
+    border: thin solid blue;
+}
 .submit-button-container{
     margin-left: 50px;
 }
@@ -79,12 +83,10 @@ input{
 button{
     padding: 8px 15px;
     font-size: 1.2rem;
-    letter-spacing: 2px;
     border: none;
     border-radius: 3px;
     background-color: rgb(13, 131, 22);
     color: #DDD;
-    font-weight: bold;
     cursor: pointer;
 }
 button:hover{
@@ -114,4 +116,7 @@ input:invalid:focus + span::after{
     letter-spacing: 1px;
     font-size: 0.7rem;
     margin: 0px;
+}
+.error-message{
+    color: red;
 }
