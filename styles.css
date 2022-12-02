@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body{
     height: 100vh;
     width: 100%;
@@ -42,9 +45,9 @@ h2{
 }
 form{
     background-color: #333;
-    padding: 50px;
-    padding-top: 20px;
+    padding: 20px 0px 0px 50px;
     margin-bottom: 10px;
+    height: 350px;
 }
 
 .contact-container, .user-password-container, .name-container{
@@ -62,6 +65,8 @@ label{
 }
 input{
     width: 200px;
+    font-size: 1rem;
+    outline: none;
     height: 25px;
     background-color: #DDD;
     border: none;
@@ -69,4 +74,44 @@ input{
 }
 .submit-button-container{
     margin-left: 50px;
+}
+
+button{
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(13, 131, 22);
+    color: #DDD;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: all 200ms ease-in-out;
+}
+
+.log-in-button{
+    cursor: pointer;
+    color: rgb(18, 177, 31);
+    font-weight: bold;
+}
+
+/*validation css */
+
+input:invalid:focus{
+    appearance: none;
+    outline: none;
+    border: thin solid red;
+}
+
+input:invalid:focus + span::after{
+    content:'Password must be a minimum eight characters and contain at least one letter, one number and one special character';
+    color: rgb(233, 33, 33);
+    position: relative;
+    top: 10px;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+    margin: 0px;
 }
